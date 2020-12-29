@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=lxYB79ANJM8
+
+npm init --yes (crea el package.json)
+
+npm i express -> framework para crear el servidor
+      morgan  -> para ver en consola lo que va pidiendo el cliente
+      mysql   -> instala el promise-mysql (conexion, da soporte a promesas de js)
+      cors    -> permite que se comuniquen dos servidores
+
+npm install -g typescript -> instala typescript
+
+tsc --init -> crea el json de configuración de ts
