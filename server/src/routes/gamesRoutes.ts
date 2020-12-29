@@ -11,7 +11,7 @@ class GamesRoutes{
     constructor(){
         this.config();
     }
-
+//comentario de prueba git
     config(): void{
         this.router.get('/', gamesController.list);
         this.router.get('/:id', gamesController.getOne);
