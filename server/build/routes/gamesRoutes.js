@@ -8,7 +8,6 @@ class GamesRoutes {
         this.router = express_1.Router();
         this.config();
     }
-    //comentario de prueba git
     config() {
         this.router.get('/', gamesControllers_1.gamesController.list);
         this.router.get('/:id', gamesControllers_1.gamesController.getOne);
