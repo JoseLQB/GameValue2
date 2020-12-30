@@ -11,6 +11,7 @@ GameValue es una aplicación para reseñar y valorar videojuegos.
 <ul>
 <li>Angular</li><li>HTML5</li><li>CSS</li><li>Bootstrap</li>
 </ul>
+
 ## Estado actual
 <ul>
 <li>:heavy_check_mark: Se ha creado la base de datos con MySQL</li>
