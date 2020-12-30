@@ -2,7 +2,7 @@ CREATE DATABASE ng_games_db;
 
 USE ng_games_db;
 
-CREATE TABLE game(
+CREATE TABLE games(
     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(200),
     platform VARCHAR(255), 
@@ -11,7 +11,3 @@ CREATE TABLE game(
     val INT(3),
     year INT(4)
 );
-
-RENAME TABLE game to games;
-
-DESCRIBE games;

@@ -8,3 +8,7 @@ npm i express -> framework para crear el servidor
 npm install -g typescript -> instala typescript
 
 tsc --init -> crea el json de configuración de ts
+
+Arrancar en dos consolas:
+npm run build
+npm run dev
