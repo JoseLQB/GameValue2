@@ -19,6 +19,6 @@ GameValue es una aplicación para reseñar y valorar videojuegos.
 <li>:heavy_check_mark: Se ha creado la api utilizando express y nodejs</li>
 <li>:heavy_check_mark: Se ha creado todo el front con angular</li>
 <li>:heavy_check_mark: Se han añadido estilos con bootstrap</li>
-<li>:heavy_check_mark: Se han establecido rutas y se ha conectado el server con el cliente</li>
+<li>:heavy_check_mark: Se han establecido rutas y se ha conectado el server con el cliente usando la api</li>
 <li>:heavy_check_mark: La aplicación permite mostrar y añadir juegos</li>
 </ul>
