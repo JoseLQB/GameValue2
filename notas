@@ -12,3 +12,5 @@ tsc --init -> crea el json de configuración de ts
 Arrancar en dos consolas:
 npm run build
 npm run dev
+Arrancar angular
+ng serve

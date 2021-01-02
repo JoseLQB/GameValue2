@@ -1,0 +1,10 @@
+.zoom{
+    object-fit: cover;
+    height: 250px;
+    width: 248,01px;
+    border-radius:0px;
+}
+
+.btn{
+    border-radius: 3px;
+}
