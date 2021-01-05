@@ -7,7 +7,7 @@ class GamesController{
     public async list(req: Request, res: Response):Promise<void> {
         //pool.query('DESCRIBE games');
         //res.json('listado de juegos');
-        const games = await pool.query('SELECT * FROM games');
+        const games = await pool.query('SELECT * FROM games ORDER by id DESC');
         res.json(games);
     } 
     //Devuelve un solo juego a partir de su id
@@ -21,6 +21,7 @@ class GamesController{
         }
         res.status(404).json({text: "El juego no ha sido encontrado"});
     }
+    //Devuelve
     //Consulta la base de datos y guarda los datos de la consulta
     public async create (req: Request, res: Response): Promise<void> {
         //console.log(req.body);//tiene los valores de los datos que se envian al cliente. Angular enviará los datos a través de aquí

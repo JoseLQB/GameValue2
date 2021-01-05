@@ -10,14 +10,16 @@ import { GameformComponent } from './components/gameform/gameform.component';
 import { GamelistComponent } from './components/gamelist/gamelist.component';
 
 //importamos los servicios que y se señalará abajo en providers
-import {GamesService} from './services/games.service'
+import {GamesService} from './services/games.service';
+import { FiltersComponent } from './components/filters/filters.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     GameformComponent,
-    GamelistComponent
+    GamelistComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ class GamesController {
         return __awaiter(this, void 0, void 0, function* () {
             //pool.query('DESCRIBE games');
             //res.json('listado de juegos');
-            const games = yield database_1.default.query('SELECT * FROM games');
+            const games = yield database_1.default.query('SELECT * FROM games ORDER by id DESC');
             res.json(games);
         });
     }
@@ -37,6 +37,7 @@ class GamesController {
             res.status(404).json({ text: "El juego no ha sido encontrado" });
         });
     }
+    //Devuelve
     //Consulta la base de datos y guarda los datos de la consulta
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
