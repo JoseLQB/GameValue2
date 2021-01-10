@@ -15,6 +15,7 @@ class GamesRoutes{
     config(): void{
         this.router.get('/', gamesController.list);
         this.router.get('/:id', gamesController.getOne);
+        this.router.get("/total", gamesController.getTotal);
         this.router.get('/ano/:year', gamesControllerYear.getByYear);
         this.router.get('/total/:year', gamesControllerYear.getTotalByYear);
         this.router.post('/', gamesController.create);

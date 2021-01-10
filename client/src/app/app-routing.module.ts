@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path:'games/edit/:id',
     component: GameformComponent
+  },
+  {
+    path:'games/total',
+    component: GamelistComponent
   }
 ];
 

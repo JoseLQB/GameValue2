@@ -1,4 +1,8 @@
-<div class="col-md-3" *ngFor='let game of games'>
+<div class="col-md-12">
+   <h5 class="center" >Mostrando {{games.length}} juegos</h5><br>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-4" *ngFor='let game of games'>
     <div class="card text-center">
         <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
             {{game.title}}
@@ -15,4 +19,6 @@
             </a>
         </div>
     </div>
+    
+</div>
 </div>

@@ -20,6 +20,9 @@ export class GamesService {
   getGame(id:string){
     return this.http.get(`${this.API_URI}/games/${id}`);
   }
+  getTotal(){
+    return this.http.get(`${this.API_URI}/games/total`);
+  }
   //eliminar juego
   deleteGame(id:string){
     return this.http.delete(`${this.API_URI}/games/${id}`);

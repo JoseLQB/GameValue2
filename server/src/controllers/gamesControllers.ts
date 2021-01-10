@@ -10,6 +10,11 @@ class GamesController{
         const games = await pool.query('SELECT * FROM games ORDER by id DESC');
         res.json(games);
     } 
+
+    //Devuelve el total de juegos
+    public async getTotal(req: Request, res: Response): Promise<any>{
+        const games = await pool.query("SELECT count(id) from games");
+    }
     //Devuelve un solo juego a partir de su id
     public async getOne(req: Request, res: Response): Promise<any>{
         //res.json('mostrando juego ' + req.params.id )

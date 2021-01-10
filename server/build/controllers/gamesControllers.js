@@ -24,6 +24,12 @@ class GamesController {
             res.json(games);
         });
     }
+    //Devuelve el total de juegos
+    getTotal(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const games = yield database_1.default.query("SELECT count(id) from games");
+        });
+    }
     //Devuelve un solo juego a partir de su id
     getOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {

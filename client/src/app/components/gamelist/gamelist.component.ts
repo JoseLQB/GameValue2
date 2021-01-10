@@ -9,7 +9,7 @@ import {GamesService  } from '../../services/games.service'
 })
 export class GamelistComponent implements OnInit {
 
-  @HostBinding('class') classes = "row";
+ // @HostBinding('class') classes = "row";
   games: any = [];
 
   constructor(private gamesService: GamesService) { }
